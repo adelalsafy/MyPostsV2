@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:elevation="@dimen/cardview_custom_shadow"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/cardview_cornerRadius"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/customItemUserIdTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/custom_card_tv_padding"
+            android:textSize="@dimen/custom_card_tv_textSize"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/customItemTitleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/custom_card_tv_padding"
+            android:textSize="@dimen/custom_card_tv_textSize"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/customItemBodyTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/custom_card_tv_padding"
+            android:text="TextView" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
